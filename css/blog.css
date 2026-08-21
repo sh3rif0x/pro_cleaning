@@ -1,0 +1,22 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.blog-header {
+    display: flex;
+}
+
+.blog ul {
+    display: flex;
+}
+
+.blog ul img {
+    width: 300px;
+}
+
+.blog ul p {
+    max-width: 300px;
+}

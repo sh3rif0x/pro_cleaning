@@ -1,0 +1,85 @@
+.team .avatar {
+    width: 300px;
+}
+
+.star-icons-img {
+    max-width: 50px;
+}
+
+.team header {
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.team header .right {
+    width: 40%;
+    text-align: left;
+}
+
+.team header .left {
+    width: 45%;
+    text-align: left;
+}
+
+.team header .right p {
+    max-width: 450px;
+}
+
+.team-banner {
+    width: 100%;
+    display: flex;
+    min-height: 400px;
+    justify-content: space-between;
+}
+
+.team-banner .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.team-banner .left .images-box {
+    position: relative;
+    width: 45%;
+    height: 270px;
+    max-height: 270px;
+    background-image: url("../assets/Image_2-005.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.team-banner p {
+    max-width: 400px;
+}
+
+.team-banner .left .big-img {
+    width: 400px;
+    height: auto;
+}
+
+.team-banner .small-img {
+    height: 170px;
+    max-height: 170px;
+    width: 60%;
+    position: absolute;
+    bottom: -40px;
+    right: -100px;
+    z-index: 3;
+}
+
+.team-banner .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features {
+    display: Flex;
+}

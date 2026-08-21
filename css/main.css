@@ -1,0 +1,62 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        font-size: 100%;
+    }
+    
+    p {
+        color: var( --gray-color);
+    }
+    
+    button,
+    a,
+    li {
+        cursor: pointer;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+     :root {
+        --font-size: 100%;
+        --green-color: #36B864;
+        --gray-color: #666666;
+        --font-weight-bold: 700;
+        --spacing-md: 1.5rem;
+    }
+    
+    section:not(#home):not(header) {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    section:not(#home):not(#header):not(#pricing)>div {
+        max-width: 1170px;
+    }
+    
+    h2 {
+        text-transform: capitalize;
+        line-height: 1.2;
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        text-transform: capitalize;
+        line-height: 1.2;
+        font-size: 1.5rem;
+    }
+    
+    button {
+        border-radius: 5px;
+    }

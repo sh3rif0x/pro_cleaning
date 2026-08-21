@@ -1,0 +1,132 @@
+    .services {
+        min-height: 100vh;
+        background: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+        min-height: 100vh;
+        justify-content: start;
+        flex-direction: column;
+    }
+    
+    .services ul {
+        display: flex;
+    }
+    
+    .services header {
+        display: flex;
+        border-bottom: gray solid 1px;
+        padding-bottom: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .services header .right,
+    .left {
+        width: 45%;
+    }
+    
+    .services header .right p {
+        max-width: 450px;
+    }
+    
+    .services header .right {
+        text-align: left;
+        width: 40%;
+    }
+    
+    .services header .left {
+        text-align: left;
+    }
+    
+    .service-list {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .service-list li {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .service-list button {
+        max-width: 150px;
+        border: var(--gray-color) solid 1px;
+        width: 100%;
+        background: transparent;
+        padding: 10px 30px;
+    }
+    
+    .service-list .green-btn {
+        background: var(--green-color);
+        outline: none;
+        color: white;
+        border: none;
+    }
+    
+    .service-banner {
+        width: 100%;
+        display: flex;
+        margin-top: 140px;
+        align-items: start;
+        margin-bottom: 200px;
+        justify-content: space-between;
+    }
+    
+    .service-banner .content {
+        flex-direction: column;
+        align-items: left;
+        display: flex;
+        margin-top: 40px;
+    }
+    
+    .service-banner .content h5 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .service-banner .content>div {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 5px;
+        display: flex;
+        gap: 30px;
+    }
+    
+    .service-banner .content h1 {
+        max-width: 500px;
+    }
+    
+    .service-banner .content p {
+        max-width: 450px;
+    }
+    
+    .service-banner .right {
+        position: relative;
+    }
+    
+    .service-banner .small-img {
+        position: absolute;
+        bottom: -60px;
+        left: -100px;
+        z-index: 3;
+    }
+    
+    .service-banner button {
+        background: var(--green-color);
+        outline: none;
+        max-width: 150px;
+        border: var(--gray-color) solid 1px;
+        width: 100%;
+        padding: 10px 30px;
+        color: white;
+        border: none;
+    }
+    
+    .service header .right h3 {
+        color: black;
+    }

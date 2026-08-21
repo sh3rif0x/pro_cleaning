@@ -1,0 +1,62 @@
+/*  main header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    height: 100px;
+    z-index: 2;
+    width: 100vw;
+}
+
+
+/*  logo box */
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logo-box h1 {
+    display: inline;
+}
+
+.logo-box span {
+    color: var(--green-color);
+}
+
+
+/*  main nav  */
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+/* 
+.main-nav {
+    display: flex;
+    gap: 30px;
+} */
+
+.cta {
+    background: var(--green-color);
+    padding: 10px 20px;
+}
+
+.active {
+    color: var(--green-color);
+}

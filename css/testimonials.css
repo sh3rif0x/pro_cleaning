@@ -1,0 +1,161 @@
+.testimonials {
+    margin-top: 250px;
+    display: flex;
+    max-width: 1170px;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials>div {
+    width: 50%;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonials-content h1 {
+    margin: 0;
+    max-width: 500px;
+    font-size: 42px;
+    line-height: 1.15;
+    color: #14231b;
+}
+
+.testimonials-content>p {
+    margin: 0;
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.testimonials-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.testimonials-buttons button {
+    width: 52px;
+    height: 52px;
+    border-radius: 9px;
+    border: 1px solid #35b968;
+    background: white;
+    color: #35b968;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.testimonials-buttons .increase-btn {
+    background: #35b968;
+    color: white;
+}
+
+
+/* =========================
+   RIGHT
+========================= */
+
+.testimonial-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    min-height: 275px;
+    padding: 25px;
+    position: relative;
+    background: white;
+    border-radius: 0 25px 25px 25px;
+    border-top: 8px solid #35b968;
+    border-right: 8px solid #35b968;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.testimonial-right p {
+    max-width: 400px;
+}
+
+.testimonial-right h4 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #14231b;
+}
+
+.testimonial-role {
+    margin: 0 0 8px;
+    color: #666;
+}
+
+
+/* =========================
+   PERSON IMAGE
+========================= */
+
+.persona-bg img {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.testimonial-rating {
+    margin-bottom: 10px;
+    color: #ff9800;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.testimonial-text {
+    margin: 0;
+    line-height: 1.45;
+    color: #666;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.testimonial-right::after {
+    content: "”";
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 70px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #35b968;
+    border-radius: 4px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 70px;
+    line-height: 1;
+}
