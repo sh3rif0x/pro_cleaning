@@ -1,55 +1,306 @@
+/* =========================================================
+   CONTACT
+========================================================= */
+
 .contact-form {
+    width: 100%;
+    max-width: 1170px;
+    margin: 120px auto 100px;
     display: flex;
-    flex-wrap: flex;
-    margin-top: 100px;
-    gap: 50px;
+    align-items: stretch;
+    gap: 80px;
 }
 
-.contact-right {
-    display: flex;
-    width: 50%;
-    gap: 20px;
-    flex-direction: column;
-}
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
 
 .contact-left {
     width: 50%;
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    gap: 20px;
 }
+
+.contact-left>h1 {
+    margin-bottom: 15px;
+    color: #14231b;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   CONTACT CARDS
+========================================================= */
+
+.contact-card {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 25px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateX(5px);
+    border-color: rgba(54, 184, 100, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(54, 184, 100, 0.1);
+    border-radius: 12px;
+}
+
+.contact-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   CONTACT INFO
+========================================================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-info h3 {
+    margin: 0;
+    color: #14231b;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin: 0;
+    color: var(--gray-color);
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.contact-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right>p:first-child {
+    margin: 0;
+    color: var(--green-color);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-right h2 {
+    margin: 0;
+    color: #14231b;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.contact-right>p:not(:first-child) {
+    max-width: 500px;
+    margin-bottom: 15px;
+    color: var(--gray-color);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
 
 .contact-right form {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-    display: Flex;
+    gap: 14px;
+    margin-top: 5px;
 }
 
-.contact-right button {
-    background: var(--green-color);
-    outline: none;
-    max-width: 150px;
-    border: var(--gray-color) solid 1px;
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.contact-right form input,
+.contact-right form textarea {
     width: 100%;
-    padding: 10px 30px;
-    color: white;
-    border: none;
+    padding: 15px 16px;
+    background: #fafafa;
+    color: #222;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .contact-right form input {
-    padding: 10px;
-    background: #fcfcfc;
-    border: 1px solid #eeeeee;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    height: 52px;
 }
 
-.contact-card {
-    background: #fcfcfc;
-    border: 1px solid #eeeeee;
-    display: flex;
+.contact-right form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+
+/* Focus */
+
+.contact-right form input:focus,
+.contact-right form textarea:focus {
+    background: #ffffff;
+    border-color: var(--green-color);
+    box-shadow: 0 0 0 3px rgba(54, 184, 100, 0.1);
+}
+
+
+/* Placeholder */
+
+.contact-right form input::placeholder,
+.contact-right form textarea::placeholder {
+    color: #999;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.contact-right button {
+    width: fit-content;
+    min-width: 150px;
+    padding: 13px 25px;
+    margin-top: 5px;
+    background: var(--green-color);
+    color: #ffffff;
+    border: none;
     outline: none;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    align-items: center;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-right button:hover {
+    background: #2fa457;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(54, 184, 100, 0.25);
+}
+
+.contact-right button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+    .contact-form {
+        padding: 0 30px;
+        gap: 50px;
+    }
+    .contact-left,
+    .contact-right {
+        width: 50%;
+    }
+    .contact-left>h1,
+    .contact-right h2 {
+        font-size: 2.1rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+    .contact-form {
+        margin-top: 80px;
+        margin-bottom: 70px;
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+    .contact-left>h1,
+    .contact-right h2 {
+        font-size: 2rem;
+    }
+    .contact-card {
+        padding: 18px 20px;
+    }
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+    .contact-form {
+        padding: 0 15px;
+    }
+    .contact-card {
+        gap: 14px;
+        padding: 15px;
+    }
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .contact-icon img {
+        width: 23px;
+        height: 23px;
+    }
+    .contact-info h3 {
+        font-size: 1rem;
+    }
+    .contact-info p {
+        font-size: 0.85rem;
+    }
 }

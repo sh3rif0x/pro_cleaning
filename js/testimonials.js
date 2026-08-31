@@ -5,7 +5,7 @@ export function initTestimonials() {
         {
             name: "Robert Fox",
             role: "Business Man",
-            image: "./assets/person1.jpg",
+            image: "./assets/1.png",
             rating: 5,
             text: "Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service."
         },
@@ -13,7 +13,7 @@ export function initTestimonials() {
         {
             name: "Jane Cooper",
             role: "Designer",
-            image: "./assets/person2.jpg",
+            image: "./assets/22.png",
             rating: 5,
             text: "Amazing cleaning service! Everything was perfectly organized and spotless. The team was friendly, professional, and very careful."
         },
@@ -21,7 +21,7 @@ export function initTestimonials() {
         {
             name: "Cody Fisher",
             role: "Manager",
-            image: "./assets/person3.jpg",
+            image: "./assets/33.png",
             rating: 4,
             text: "Very professional service from start to finish. They arrived on time and did an excellent job cleaning my entire home."
         },
@@ -29,7 +29,7 @@ export function initTestimonials() {
         {
             name: "Esther Howard",
             role: "Business Woman",
-            image: "./assets/person4.jpg",
+            image: "./assets/44.png",
             rating: 5,
             text: "I am extremely happy with the results. My house looks completely different and everything was cleaned with great attention to detail."
         },
@@ -37,7 +37,7 @@ export function initTestimonials() {
         {
             name: "Wade Warren",
             role: "Entrepreneur",
-            image: "./assets/person5.jpg",
+            image: "./assets/1.png",
             rating: 5,
             text: "Great experience! The staff were polite, fast, and professional. I will definitely use their cleaning services again."
         }

@@ -1,5 +1,6 @@
 import { initHeader } from "./header.js"
 import { initTestimonials } from "./testimonials.js"
+import { initPricing } from "./pricing.js"
 import { initTeam } from "./team.js"
 
 async function loadSections() {
@@ -48,6 +49,7 @@ async function loadSections() {
         initHeader()
         initTeam()
         initTestimonials()
+        initPricing()
     } catch (err) {
         console.log("error while loading files")
     }

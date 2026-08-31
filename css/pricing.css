@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    height: 84vh;
+    max-height: 700px;
     padding-top: 100px;
     color: white;
     flex-direction: column;
@@ -92,4 +92,45 @@
     color: white;
     outline: none;
     border: none;
+}
+
+.pricing-plans>div button {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    padding: 15px 70px;
+    border: 1px solid var(--gray-color);
+    transition: all 0.3s ease;
+}
+
+.pricing-plans>div button:hover {
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+.pricing-plans>div button:hover i,
+.pricing-plans>div button:hover svg {
+    color: var(--green-color);
+    fill: var(--green-color);
+}
+
+
+/* Middle plan exception */
+
+.enterprise-package .green-btn {
+    background: var(--green-color);
+    color: white;
+    border: 1px solid var(--green-color);
+}
+
+.enterprise-package .green-btn:hover {
+    background: var(--green-color);
+    color: white;
+    border-color: var(--green-color);
+}
+
+.enterprise-package .green-btn:hover i,
+.enterprise-package .green-btn:hover svg {
+    color: white;
+    fill: white;
 }

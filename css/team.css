@@ -1,85 +1,491 @@
-.team .avatar {
-    width: 300px;
-}
+/* =========================================================
+   TEAM SECTION
+========================================================= */
 
-.star-icons-img {
-    max-width: 50px;
-}
-
-.team header {
-    display: flex;
-    border-bottom: 1px solid gray;
-    padding-bottom: 20px;
+.team {
     width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 140px 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+
+/* =========================================================
+   TEAM HEADER
+========================================================= */
+
+.team>header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
+    gap: 60px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.team header .right {
+.team>header .left {
+    width: 50%;
+}
+
+.team>header .right {
     width: 40%;
-    text-align: left;
 }
 
-.team header .left {
-    width: 45%;
-    text-align: left;
+.team>header h2 {
+    max-width: 600px;
+    color: #14231b;
+    font-size: 2.5rem;
+    line-height: 1.2;
 }
 
-.team header .right p {
+.team>header h3 {
+    margin-bottom: 12px;
+    color: var(--green-color);
+    font-size: 1.3rem;
+}
+
+.team>header p {
     max-width: 450px;
+    color: var(--gray-color);
+    line-height: 1.7;
 }
+
+
+/* =========================================================
+   TEAM MEMBERS
+========================================================= */
+
+.team .service-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 0;
+}
+
+.team .service-list>li {
+    min-width: 0;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.team .service-list>li:hover {
+    transform: translateY(-8px);
+    border-color: rgba(54, 184, 100, 0.35);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   MEMBER IMAGE
+========================================================= */
+
+.team .avatar {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.team .star-icons {
+    min-height: 22px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.team .star-icons::before {
+    content: "★★★★★";
+    color: #f5a623;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   MEMBER CONTENT
+========================================================= */
+
+.team .service-list h2 {
+    margin-bottom: 10px;
+    color: #14231b;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.team .service-list p {
+    max-width: 100%;
+    color: var(--gray-color);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TEAM BANNER
+========================================================= */
 
 .team-banner {
     width: 100%;
+    min-height: 500px;
     display: flex;
-    min-height: 400px;
+    align-items: center;
     justify-content: space-between;
+    gap: 90px;
 }
 
-.team-banner .left {
+
+/* =========================================================
+   BANNER LEFT / IMAGE
+========================================================= */
+
+.team-banner>.left {
     width: 50%;
+    min-height: 430px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 100%;
+    position: relative;
 }
 
-.team-banner .left .images-box {
+.team-banner .images-box {
+    width: 400px;
+    height: 340px;
     position: relative;
-    width: 45%;
-    height: 270px;
-    max-height: 270px;
     background-image: url("../assets/Image_2-005.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 1;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
 }
 
-.team-banner p {
-    max-width: 400px;
+
+/* Green border decoration */
+
+.team-banner .images-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: -20px;
+    border: 2px solid var(--green-color);
+    border-radius: 22px;
+    z-index: -1;
 }
 
-.team-banner .left .big-img {
-    width: 400px;
-    height: auto;
-}
+
+/* Small floating image */
 
 .team-banner .small-img {
-    height: 170px;
-    max-height: 170px;
-    width: 60%;
     position: absolute;
-    bottom: -40px;
-    right: -100px;
-    z-index: 3;
+    width: 190px;
+    height: 190px;
+    right: -80px;
+    bottom: -60px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 8px solid #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+    transition: transform 0.3s ease;
 }
 
-.team-banner .right {
+.team-banner .small-img:hover {
+    transform: translateY(-8px) rotate(2deg);
+}
+
+
+/* =========================================================
+   BANNER RIGHT
+========================================================= */
+
+.team-banner>.right {
     width: 50%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
 }
 
-.features {
-    display: Flex;
+.team-banner .right h1 {
+    color: #14231b;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.team-banner .right>p {
+    max-width: 500px;
+    color: var(--gray-color);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.team-banner .features {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    margin-top: 5px;
+}
+
+.team-banner .features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.team-banner .features li {
+    position: relative;
+    padding-left: 28px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.team-banner .features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(54, 184, 100, 0.12);
+    border-radius: 50%;
+    color: var(--green-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.team-banner .buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.team-banner .buttons button {
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.team-banner .buttons button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Green button */
+
+.team-banner .green-btn {
+    background: var(--green-color);
+    color: #ffffff;
+    border: 1px solid var(--green-color);
+    outline: none;
+}
+
+.team-banner .green-btn:hover {
+    background: #2fa457;
+}
+
+
+/* Transparent button */
+
+.team-banner .transparent-btn {
+    background: transparent;
+    color: #222222;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+.team-banner .transparent-btn:hover {
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+    .team {
+        padding: 110px 30px 90px;
+    }
+    .team>header {
+        gap: 35px;
+    }
+    .team>header .left,
+    .team>header .right {
+        width: 50%;
+    }
+    .team .service-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-banner {
+        gap: 60px;
+    }
+    .team-banner>.left,
+    .team-banner>.right {
+        width: 50%;
+    }
+    .team-banner .images-box {
+        width: 320px;
+        height: 300px;
+    }
+    .team-banner .small-img {
+        width: 150px;
+        height: 150px;
+        right: -40px;
+    }
+    .team-banner .right h1 {
+        font-size: 2.2rem;
+    }
+    .team-banner .features {
+        gap: 25px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+    .team {
+        padding: 90px 20px 70px;
+        gap: 50px;
+    }
+    /* Header */
+    .team>header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .team>header .left,
+    .team>header .right {
+        width: 100%;
+    }
+    .team>header h2 {
+        font-size: 2rem;
+    }
+    /* Members */
+    .team .service-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .team .avatar {
+        height: 300px;
+    }
+    /* Banner */
+    .team-banner {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .team-banner>.left,
+    .team-banner>.right {
+        width: 100%;
+    }
+    .team-banner>.left {
+        min-height: 350px;
+    }
+    .team-banner .images-box {
+        width: 80%;
+        height: 300px;
+    }
+    .team-banner .small-img {
+        width: 140px;
+        height: 140px;
+        right: 0;
+        bottom: -50px;
+    }
+    .team-banner .right h1 {
+        font-size: 2.1rem;
+    }
+    .team-banner .features {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .team-banner .features ul {
+        flex: 1;
+        min-width: 180px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 450px) {
+    .team {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .team>header h2 {
+        font-size: 1.8rem;
+    }
+    .team .avatar {
+        height: 250px;
+    }
+    .team-banner>.left {
+        min-height: 300px;
+    }
+    .team-banner .images-box {
+        width: 85%;
+        height: 250px;
+    }
+    .team-banner .small-img {
+        width: 115px;
+        height: 115px;
+        right: -5px;
+    }
+    .team-banner .right h1 {
+        font-size: 1.8rem;
+    }
+    .team-banner .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .team-banner .buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .team-banner .buttons button {
+        flex: 1;
+        min-width: 130px;
+    }
 }

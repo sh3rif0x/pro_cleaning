@@ -1,10 +1,9 @@
     .services {
-        min-height: 100vh;
         background: rgb(255, 255, 255);
         display: flex;
         align-items: center;
         margin-top: 150px;
-        min-height: 100vh;
+        min-height: min-ctonent;
         justify-content: start;
         flex-direction: column;
     }
@@ -43,13 +42,16 @@
     .service-list {
         margin-top: 20px;
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
     }
     
     .service-list li {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        max-width: 376px;
     }
     
     .service-list button {
@@ -58,6 +60,10 @@
         width: 100%;
         background: transparent;
         padding: 10px 30px;
+    }
+    
+    .service-list img {
+        max-width: 376px;
     }
     
     .service-list .green-btn {

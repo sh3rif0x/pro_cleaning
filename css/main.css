@@ -1,62 +1,204 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-        font-size: 100%;
-    }
-    
-    p {
-        color: var( --gray-color);
-    }
-    
-    button,
-    a,
-    li {
-        cursor: pointer;
-    }
-    
-    li {
-        list-style: none;
-    }
-    
-     :root {
-        --font-size: 100%;
-        --green-color: #36B864;
-        --gray-color: #666666;
-        --font-weight-bold: 700;
-        --spacing-md: 1.5rem;
-    }
-    
-    section:not(#home):not(header) {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --font-size: 100%;
+    --green-color: #36B864;
+    --gray-color: #666666;
+    --font-weight-bold: 700;
+    --spacing-md: 1.5rem;
+}
+
+
+/* =========================================================
+   HTML / BODY
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+p {
+    color: var(--gray-color);
+}
+
+
+/* =========================================================
+   INTERACTIVE ELEMENTS
+========================================================= */
+
+button,
+a,
+li {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+
+/*
+   Sections now use their natural content height.
+   No 100vh / min-height.
+*/
+
+section:not(#home):not(header) {
+    width: 100%;
+    display: flex;
+    height: auto;
+    min-height: 0;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   SECTION CONTENT WIDTH
+========================================================= */
+
+section:not(#home):not(#header):not(#pricing)>div {
+    width: 100%;
+    max-width: 1170px;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h2 {
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-size: 2.5rem;
+}
+
+h3 {
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE CONTAINER
+========================================================= */
+
+@media (max-width: 1200px) {
     section:not(#home):not(#header):not(#pricing)>div {
-        max-width: 1170px;
+        width: calc(100% - 60px);
     }
-    
+}
+
+@media (max-width: 700px) {
+    section:not(#home):not(#header):not(#pricing)>div {
+        width: calc(100% - 40px);
+    }
     h2 {
-        text-transform: capitalize;
-        line-height: 1.2;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
-    
     h3 {
-        text-transform: capitalize;
-        line-height: 1.2;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-    
-    button {
-        border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+    section:not(#home):not(#header):not(#pricing)>div {
+        width: calc(100% - 30px);
     }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}

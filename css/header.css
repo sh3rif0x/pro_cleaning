@@ -45,13 +45,6 @@
     color: black;
 }
 
-
-/* 
-.main-nav {
-    display: flex;
-    gap: 30px;
-} */
-
 .cta {
     background: var(--green-color);
     padding: 10px 20px;
@@ -59,4 +52,14 @@
 
 .active {
     color: var(--green-color);
+}
+
+@media(max-width:996px) {
+    .main-nav {
+        display: none;
+    }
+    /*  main header */
+    .header {
+        padding: 10px 10px;
+    }
 }
